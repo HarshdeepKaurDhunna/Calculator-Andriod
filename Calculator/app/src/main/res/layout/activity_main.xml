@@ -25,9 +25,9 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:paddingRight="30dp"
-            android:text="3 + 3"
+            android:text=""
             android:textColor="@color/cardview_dark_background"
-            android:textSize="30sp" />
+            android:textSize="50sp" />
 
         <!--TextView to display output-->
         <TextView
@@ -38,9 +38,9 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:paddingRight="30dp"
-            android:text="5"
+            android:text=""
             android:textColor="@color/cardview_dark_background"
-            android:textSize="45sp" />
+            android:textSize="50sp" />
     </LinearLayout>
 
     <!--Linear Layout to hold multiple layouts row for buttons-->
@@ -61,31 +61,34 @@
                 android:id="@+id/allClearFunc"
                 android:layout_width="99dp"
                 android:layout_height="match_parent"
+                app:backgroundTint="@color/white"
                 android:layout_weight="1"
-                android:background="android:background"
                 android:text="AC"
                 android:textColor="@color/red"
-                android:textSize="@dimen/buttonFunc" />
+                android:textSize="@dimen/buttonFunc"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
-                android:id="@+id/deletFunc"
+                android:id="@+id/deleteFunc"
                 android:layout_width="3dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="⌦"
                 android:textColor="@color/red"
-                android:textSize="@dimen/buttonFunc" />
+                android:textSize="@dimen/buttonFunc"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
-                android:id="@+id/textView"
+                android:id="@+id/modulusFunc"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="÷"
                 android:textColor="@color/green"
-                android:textSize="@dimen/buttonFunc" />
+                android:textSize="@dimen/buttonFunc"
+                style="?android:attr/borderlessButtonStyle"/>
 
 
         </LinearLayout>
@@ -101,40 +104,44 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="7"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/calDigitEight"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="8"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/calDigitNine"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="9"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/multiplyFunc"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="x"
                 android:textColor="@color/green"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
 
         </LinearLayout>
@@ -150,40 +157,44 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="4"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/calDigitFive"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="5"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/calDigitSix"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="6"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/minusFunc"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="-"
                 android:textColor="@color/green"
-                android:textSize="@dimen/buttonFunc" />
+                android:textSize="@dimen/buttonFunc"
+                style="?android:attr/borderlessButtonStyle"/>
 
 
         </LinearLayout>
@@ -199,40 +210,44 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="1"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/calDigitTwo"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="2"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/calDigitThree"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="3"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/plusFunc"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="+"
                 android:textColor="@color/green"
-                android:textSize="@dimen/buttonFunc" />
+                android:textSize="@dimen/buttonFunc"
+                style="?android:attr/borderlessButtonStyle"/>
 
 
         </LinearLayout>
@@ -248,30 +263,33 @@
                 android:layout_width="11dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="."
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonFunc" />
+                android:textSize="@dimen/buttonFunc"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/calDigitZero"
                 android:layout_width="17dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="0"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="@dimen/buttonText" />
+                android:textSize="@dimen/buttonText"
+                style="?android:attr/borderlessButtonStyle"/>
 
             <Button
                 android:id="@+id/equalFunc"
                 android:layout_width="110dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="android:background"
+                app:backgroundTint="@color/white"
                 android:text="="
                 android:textColor="@color/green"
-                android:textSize="@dimen/buttonFunc" />
+                android:textSize="@dimen/buttonFunc"
+                style="?android:attr/borderlessButtonStyle"/>
          </LinearLayout>
     </LinearLayout>
 </LinearLayout>
