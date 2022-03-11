@@ -1,18 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="NamespaceTypo">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--Linear Layout to display output/input-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!--TextView to display input-->
+        <TextView
+            android:id="@+id/calculationAreaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="30dp"
+            android:text="3 + 3"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="30sp" />
+
+        <!--TextView to display output-->
+        <TextView
+            android:id="@+id/calculationResultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="30dp"
+            android:text="5"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="45sp" />
+    </LinearLayout>
+
+    <!--Linear Layout to hold multiple layouts row for buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <!--Linear Layout for row1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <Button
+                android:id="@+id/allClearFunc"
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="AC"
+                android:textColor="@color/red"
+                android:textSize="@dimen/buttonFunc" />
+
+            <Button
+                android:id="@+id/deletFunc"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="⌦"
+                android:textColor="@color/red"
+                android:textSize="@dimen/buttonFunc" />
+
+            <Button
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="÷"
+                android:textColor="@color/green"
+                android:textSize="@dimen/buttonFunc" />
+
+
+        </LinearLayout>
+
+        <!--Linear Layout for row2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/calDigitSeven"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="7"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonText" />
+
+            <Button
+                android:id="@+id/calDigitEight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="8"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonText" />
+
+            <Button
+                android:id="@+id/calDigitNine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="9"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonText" />
+
+            <Button
+                android:id="@+id/multiplyFunc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="x"
+                android:textColor="@color/green"
+                android:textSize="@dimen/buttonText" />
+
+
+        </LinearLayout>
+
+        <!--Linear Layout for row3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/calDigitFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="4"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonText" />
+
+            <Button
+                android:id="@+id/calDigitFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="5"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonText" />
+
+            <Button
+                android:id="@+id/calDigitSix"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="6"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonText" />
+
+            <Button
+                android:id="@+id/minusFunc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="-"
+                android:textColor="@color/green"
+                android:textSize="@dimen/buttonFunc" />
+
+
+        </LinearLayout>
+
+        <!--Linear Layout for row4-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/calDigitOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="1"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonText" />
+
+            <Button
+                android:id="@+id/calDigitTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="2"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonText" />
+
+            <Button
+                android:id="@+id/calDigitThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="3"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonText" />
+
+            <Button
+                android:id="@+id/plusFunc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="+"
+                android:textColor="@color/green"
+                android:textSize="@dimen/buttonFunc" />
+
+
+        </LinearLayout>
+
+        <!--Linear Layout for row5-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/calDigitDot"
+                android:layout_width="11dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="."
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonFunc" />
+
+            <Button
+                android:id="@+id/calDigitZero"
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="0"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/buttonText" />
+
+            <Button
+                android:id="@+id/equalFunc"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="android:background"
+                android:text="="
+                android:textColor="@color/green"
+                android:textSize="@dimen/buttonFunc" />
+         </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
